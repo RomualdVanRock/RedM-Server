@@ -4,6 +4,16 @@ local finished = 0
 local payout = math.random(Config.MinCash,Config.MaxCash)
 local xp = math.random(Config.MinExp,Config.MaxExp)
 
+local blips = {
+    {title="valentine", id=1687768444, x=1404.36, y=-1373.37, z=81.29},
+}
+
+Citizen.CreateThread(function()
+    for _, info in pairs(blips) do
+        info.blip = Citizen.InvokeNative(0x554d9d53f696d002, info.id, info.x, info.y, info.z)
+    end      
+end)
+
 Citizen.CreateThread(function()
     while not isFarmer do
 		Citizen.Wait(0)

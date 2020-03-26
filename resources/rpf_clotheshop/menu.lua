@@ -2,8 +2,8 @@
 -- blip sur la carte
 
 local blips = {
-   {title="valentine", id=1687768444, x=-322.25, y=803.97, z=116.95},
-   {title="rhodes", id=1687768444, x=1225.60, y=-1293.85, z=76.90},
+    {title="valentine", id=1687768444, x=-322.25, y=803.97, z=116.95},
+    {title="rhodes", id=1687768444, x=1225.60, y=-1293.85, z=76.90},
 }
 
 Citizen.CreateThread(function()
