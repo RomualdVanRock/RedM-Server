@@ -1,0 +1,1 @@
+..\server-files\run.cmd +exec server.cfg +set gamename rdr3
